@@ -1,3 +1,5 @@
+require "download_strategy"
+
 # GitHubPrivateRepositoryDownloadStrategy downloads contents from GitHub
 # Private Repository. To use it, add
 # `:using => :github_private_repo` to the URL section of
