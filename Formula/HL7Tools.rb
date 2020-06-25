@@ -24,9 +24,4 @@ class HL7Tools < Formula
     How to use this binary
   EOS
   end
-
-  test do
-    system "#{bin}/program --version"
-    ...
-  end
 end
