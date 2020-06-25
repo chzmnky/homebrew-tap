@@ -15,9 +15,6 @@ class HL7Tools < Formula
       sha256 "de5a02690cfe61175550ce607308de40a1f30999a2c59d9e3280cff0af8ea13b"
     end
   end
-  
-  head "https://github.com/some/package.git"
-  ...
 
   def install
     bin.install "program"
