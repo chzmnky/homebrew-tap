@@ -8,11 +8,11 @@ class Hl7tools < Formula
 
   if OS.mac?
     url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.1/HL7Tools_0.1.1_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "b7305034c73f702e3d0ce79fb72e6e2594d30056ee3258f6a0f9ea4c1faeaa32"
+    sha256 "a8755584a603854be3200b4f22daff8e2541e516380a3e6f222ad29bd788a62d"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.1/HL7Tools_0.1.1_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "7856925784595c269d4143baa64cea216292d4e7959603af8b3fd104a924c5eb"
+      sha256 "85594b385bedc744e36db41d4713fa24de239b512c2b82e5c3914eece0ef808b"
     end
   end
 
