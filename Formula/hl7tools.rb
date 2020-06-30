@@ -7,12 +7,12 @@ class Hl7tools < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.1/HL7Tools_0.1.1_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "a8755584a603854be3200b4f22daff8e2541e516380a3e6f222ad29bd788a62d"
+    url "https://hl7tools.blob.core.windows.net/hl7tools/HL7Tools/v0.1.1/HL7Tools_0.1.1_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "9bcad29af6f28fe4cbe966d9550869a96d0c6b5687339de84ab34bdaf485ba3e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.1/HL7Tools_0.1.1_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "85594b385bedc744e36db41d4713fa24de239b512c2b82e5c3914eece0ef808b"
+      url "https://hl7tools.blob.core.windows.net/hl7tools/HL7Tools/v0.1.1/HL7Tools_0.1.1_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "981337072120de5081b1ae44598b6035c0979cdf72c659f7a25952fc056c751e"
     end
   end
 
