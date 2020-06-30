@@ -8,11 +8,11 @@ class Hl7tools < Formula
 
   if OS.mac?
     url "https://hl7tools.blob.core.windows.net/hl7tools/HL7Tools/v0.1.1/HL7Tools_0.1.1_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "9bcad29af6f28fe4cbe966d9550869a96d0c6b5687339de84ab34bdaf485ba3e"
+    sha256 "1f0a061996ebbb305b13457b098400bc3e5a0dda9913cbaf6629663e997f3457"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://hl7tools.blob.core.windows.net/hl7tools/HL7Tools/v0.1.1/HL7Tools_0.1.1_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "981337072120de5081b1ae44598b6035c0979cdf72c659f7a25952fc056c751e"
+      sha256 "0ba92844961d8bae1dc6d590999c8b404c231410a501eedb39731313f17445a7"
     end
   end
 
