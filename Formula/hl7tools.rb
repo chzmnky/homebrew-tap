@@ -3,16 +3,16 @@ require_relative "../custom_download_strategy"
 class Hl7tools < Formula
   desc "Tools to assist with developing and testing HL7 interfaces."
   homepage ""
-  version "0.1.2-rc1"
+  version "0.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.2-rc1/HL7Tools_0.1.2-rc1_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "bd4000cd5c9c44249b23e90defa3c6abb042ca5a05f3e91230b0a86f427db993"
+    url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.2/HL7Tools_0.1.2_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "d4366624f4113cff7d22009ef344304f10bdede8d9909df2b8b63115dee760d8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.2-rc1/HL7Tools_0.1.2-rc1_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4425ca9728192a3d7c3066202b284ebf1ba50032dc5f5680e846d85bdcfedbc1"
+      url "https://github.com/chzmnky/HL7Tools/releases/download/v0.1.2/HL7Tools_0.1.2_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "fddcebca6d3f057e06ff0bb468c47a5853725a0f1455e727fec63e698b87c1a2"
     end
   end
 
